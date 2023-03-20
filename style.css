@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    font-family: "Space Mono";
+    background-color: hsl(185, 41%, 84%);
+    min-width: 1340px;
+    text-align: center;
+   
+}
+
+/* ======================== Star Main Area ================ */
+
+.site{
+    margin-top: 2rem;
+    padding: 5rem 25rem;
+}
+
+/* ======================== Star Cal div Area ================ */
+.rate{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 6rem;
+    gap: 2rem;
+    border-radius: 12px;
+}
+
+.cal{
+    text-align: start;   
+}
+
+.red{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cal-span{
+    margin-top: 2rem;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.error{
+    margin-top: 2rem;
+    color: hsl(0, 100%, 50%);
+    font-size: 1rem;
+    display: none;
+}
+
+.in-img{
+    margin-left: 0.938rem;
+    position: absolute;
+    margin-top: 1.875rem;
+}
+
+.put{
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Space Mono";
+    text-align: end;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    border-radius: 8px;
+    width: 95%;
+}
+
+.put:focus, #num:focus{
+    outline-color: hsl(172, 67%, 45%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.in{
+    margin-bottom: 2rem;
+}
+
+.per{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.rate-btn{
+    border-radius: 8px;
+    background-color: hsl(183, 100%, 15%);
+    padding: 0.6rem;
+    text-align: center;
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.rate-btn:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#num{
+    width: 90px;
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Space Mono";
+    border: none;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+/* ======================== Star total div Area ================ */
+
+.total{
+    text-align: start;
+    background-color:  hsl(183, 100%, 15%);
+    padding: 1rem;
+    border-radius: 12px;
+    width: 400px;
+}
+
+.price{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;   
+}
+
+.span1{
+    color: hsl(189, 41%, 97%);
+    font-size: 1.5rem;
+}
+
+.span2{
+    color: hsl(184, 14%, 56%);
+    font-size: 1rem;
+}
+
+.amount-span{
+    color: hsl(172, 67%, 45%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn{
+    margin-top: 8rem;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(186, 14%, 43%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+    margin-top: 70px;
+  }
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+
+  @media screen and (max-width: 1400px) {
+    .site{
+        padding: 5rem 15rem;
+    }
+  }
+
+  @media screen and (max-width:786px) {
+    body{
+        min-width: 786px;
+    }
+
+    .site{
+        padding: 5rem 2rem;
+        margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width:375px){
+    body{
+        min-width: 375px;
+    }
+
+    .site{
+        padding: 5rem 0rem;
+    }
+
+    .rate{
+        flex-direction: column;
+        width: 100%;
+        padding: 0.6rem;
+    }
+
+    .per{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cal{
+        padding: 0rem 1rem;
+    }
+
+    .total{
+        width: 340px;
+    }
+    
+    #num{
+        width: 9rem;
+    }
+
+  }
+
+  /* ======================== End Media Querry Area ================ */
